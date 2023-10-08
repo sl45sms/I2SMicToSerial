@@ -35,3 +35,15 @@ Use the usb-c port named "UART" on the board, and connect it to the computer.
 `stty -f /dev/cu.usbserial-xxxx 921600 cs8 -parenb -cstopb`
 
 * replace /dev/cu.usbserial-xxxx with the serial port of your board
+
+# wiring
+you can use the following table to connect the microphone to the board
+
+```
+#define MIC_STD_BCLK_IO2    GPIO_NUM_11    // I2S bit clock io number
+#define MIC_STD_WS_IO2      GPIO_NUM_2     // I2S word select io number
+#define MIC_STD_DIN_IO2     GPIO_NUM_10    // I2S data in io number
+```
+
+ if you want to use other pins change the defines in i2sMicToserial.c
+ 
