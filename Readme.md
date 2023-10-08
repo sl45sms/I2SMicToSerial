@@ -4,11 +4,11 @@ Just a quick test to see if i2s microphone works on esp32c6 with esp-idf.
 I keep it simple, just as reference for myself, and anyone else who might need it.
 
 # microphone
-sen0526 from dfRobot, but any i2s mic with MSM261S4030H0R chip should work
+sen0526 from DFRobot, but any i2s mic with MSM261S4030H0R chip should work
 
 # board
-ESP32-C6-DevKitC-1-N8 from espressif, the board is relatively new, and not yet supported by arduino-esp32, so we use esp-idf 5.2 directly from git repo. 
-On vscode we use the Espressif IDF v1.6.4 extension.
+ESP32-C6-DevKitC-1-N8 from Espressif Systems. The board is relatively new, and not yet supported by arduino-esp32, so we use esp-idf 5.2 directly from git repo. 
+On VSCode we use the Espressif IDF v1.6.4 extension.
 Select the usbbodem port and esp32c6 as target board, as flash method select JTAG.
 ![Board Config](/doc/idfconfig.png)
 
@@ -46,4 +46,3 @@ you can use the following table to connect the microphone to the board
 ```
 
  if you want to use other pins change the defines in i2sMicToserial.c
- 
